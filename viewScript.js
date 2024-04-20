@@ -8,6 +8,7 @@ function loadPosts() {
         postElement.className = 'card';
         postElement.innerHTML = `
             <h2>${post.title}</h2>
+            <p>${post.date}</p>
             <p>${post.content}</p>
             ${post.image ? `<img src="${post.image}" alt="Imagen de publicación" style="width:100%;">` : ''}
         `;
