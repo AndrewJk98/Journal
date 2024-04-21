@@ -4,23 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear Publicación</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ZenhQ4XwpQznq5QGNf89UXJa5SWaLLDdLqODtXtRWZQSLdSFJY6T7PDpvIGz44SXu" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <h1>Crear una nueva publicación</h1>
-    </header>
-    <main>
-        <div class="card">
-            <input type="text" id="title" placeholder="Título">
-            <textarea id="content" placeholder="Contenido"></textarea>
-            <input type="file" id="image" accept="image/*">
-            <button onclick="addPost()">Publicar</button>
+<header class="container">
+    <h1>Crear una nueva publicación</h1>
+</header>
+<main class="container mt-4">
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <div class="mb-3">
+                    <label for="title" class="form-label">Título</label>
+                    <input type="text" class="form-control" id="title" placeholder="Título">
+                </div>
+                <div class="mb-3">
+                    <label for="content" class="form-label">Contenido</label>
+                    <textarea class="form-control" id="content" rows="5" placeholder="Contenido"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="image" class="form-label">Imagen (opcional)</label>
+                    <input type="file" class="form-control" id="image" accept="image/*">
+                </div>
+                <button type="button" class="btn btn-primary" onclick="addPost()">Publicar</button>
+            </form>
         </div>
-    </main>
-    <footer>
-        <p>Todos los derechos reservados</p>
-    </footer>
-    <script src="createScript.js"></script>
+    </div>
+</main>
+<footer class="container mt-4">
+    <p>Todos los derechos reservados</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EQ+0CsbJxQClU+BLWxkJaWUL+3iYmEoCBHtQW53ONBsiGdH7TSzUONFw5tGe" crossorigin="anonymous"></script>
+<script src="js/createScript.js"></script>
 </body>
 </html>
